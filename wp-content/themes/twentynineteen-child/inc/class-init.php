@@ -117,7 +117,7 @@ class WPTZ_Init {
 			'hierarchical'        => false,
 			'rewrite'             => false,
 			'menu_icon'           => 'dashicons-clock',
-			'supports'            => array( 'title', 'editor', 'thumbnail' ),
+			'supports'            => array( 'title', 'editor' ),
 		);
 
 		register_post_type( 'event_day', $args );
