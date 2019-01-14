@@ -7,14 +7,29 @@ class WPTZ_Init {
 
 	public function __construct() {
 
-		/* @see register_post_type_event */
+		/**
+		 * Register new custom post type Event
+		 * @see register_post_type_event
+		 */
 		add_action( 'init', [ $this, 'register_post_type_event' ] );
 
-		/* @see register_post_type_event_day */
+		/**
+		 * Register new custom post type Event day
+		 * @see register_post_type_event_day
+		 */
 		add_action( 'init', [ $this, 'register_post_type_event_day' ] );
 
-		/* @see enqueue_scripts */
+		/**
+		 * Add parent scripts
+		 * @see enqueue_scripts
+		 */
 		add_action( 'wp_enqueue_scripts', [ $this, 'enqueue_scripts' ] );
+
+		/**
+		 * Add references between post types Event and Event day
+		 * @see p2p_connection_types
+		 */
+		add_action( 'p2p_init', [ $this, 'p2p_connection_types' ] );
 	}
 
 	/**
@@ -113,6 +128,18 @@ class WPTZ_Init {
 	 */
 	function enqueue_scripts() {
 		wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
+	}
+
+	/**
+	 * Add references between post types Event and Event day
+	 */
+	function p2p_connection_types() {
+		p2p_register_connection_type( array(
+			'name'		  => 'events_to_event_days',
+			'from'		  => 'event',
+			'to' 		  => 'event_day',
+			'cardinality' => 'one-to-many',
+		) );
 	}
 }
 
