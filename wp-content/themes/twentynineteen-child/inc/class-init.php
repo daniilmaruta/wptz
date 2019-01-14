@@ -42,15 +42,15 @@ class WPTZ_Init {
 		 */
 
 		$labels = array(
-			'name'          => __( 'Events', 'understrap-child' ),
-			'singular_name' => __( 'Event', 'understrap-child' ),
-			'all_items'     => __( 'All Events', 'understrap-child' ),
-			'add_new'       => __( 'Add New Event', 'understrap-child' ),
-			'add_new_item'  => __( 'Add New Event', 'understrap-child' ),
-			'edit_item'     => __( 'Edit Event', 'understrap-child' ),
-			'new_item'      => __( 'New Event', 'understrap-child' ),
-			'view_item'     => __( 'View Event', 'understrap-child' ),
-			'view_items'    => __( 'View Event', 'understrap-child' ),
+			'name'          => __( 'Events', 'twentynineteen-child' ),
+			'singular_name' => __( 'Event', 'twentynineteen-child' ),
+			'all_items'     => __( 'All Events', 'twentynineteen-child' ),
+			'add_new'       => __( 'Add New Event', 'twentynineteen-child' ),
+			'add_new_item'  => __( 'Add New Event', 'twentynineteen-child' ),
+			'edit_item'     => __( 'Edit Event', 'twentynineteen-child' ),
+			'new_item'      => __( 'New Event', 'twentynineteen-child' ),
+			'view_item'     => __( 'View Event', 'twentynineteen-child' ),
+			'view_items'    => __( 'View Event', 'twentynineteen-child' ),
 		);
 
 		$args = array(
@@ -88,15 +88,15 @@ class WPTZ_Init {
 		 */
 
 		$labels = array(
-			'name'          => __( 'Event days', 'understrap-child' ),
-			'singular_name' => __( 'Event day', 'understrap-child' ),
-			'all_items'     => __( 'All Event days', 'understrap-child' ),
-			'add_new'       => __( 'Add New Event day', 'understrap-child' ),
-			'add_new_item'  => __( 'Add New Event day', 'understrap-child' ),
-			'edit_item'     => __( 'Edit Event day', 'understrap-child' ),
-			'new_item'      => __( 'New Event day', 'understrap-child' ),
-			'view_item'     => __( 'View Event day', 'understrap-child' ),
-			'view_items'    => __( 'View Event day', 'understrap-child' ),
+			'name'          => __( 'Event days', 'twentynineteen-child' ),
+			'singular_name' => __( 'Event day', 'twentynineteen-child' ),
+			'all_items'     => __( 'All Event days', 'twentynineteen-child' ),
+			'add_new'       => __( 'Add New Event day', 'twentynineteen-child' ),
+			'add_new_item'  => __( 'Add New Event day', 'twentynineteen-child' ),
+			'edit_item'     => __( 'Edit Event day', 'twentynineteen-child' ),
+			'new_item'      => __( 'New Event day', 'twentynineteen-child' ),
+			'view_item'     => __( 'View Event day', 'twentynineteen-child' ),
+			'view_items'    => __( 'View Event day', 'twentynineteen-child' ),
 		);
 
 		$args = array(
