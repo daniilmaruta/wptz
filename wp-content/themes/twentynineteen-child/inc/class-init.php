@@ -62,20 +62,20 @@ class WPTZ_Init {
 			'show_ui'             => true,
 			'show_in_rest'        => false,
 			'rest_base'           => '',
-			'has_archive'         => false,
+			'has_archive'         => true,
 			'show_in_menu'        => true,
 			'show_in_nav_menus'   => true,
 			'exclude_from_search' => false,
 			'capability_type'     => 'post',
 			'map_meta_cap'        => true,
 			'hierarchical'        => false,
-			'rewrite'             => array( 'slug' => 'event', 'with_front' => true ),
+			'rewrite'             => array( 'slug' => 'events', 'with_front' => true ),
 			'query_var'           => true,
 			'menu_icon'           => 'dashicons-sticky',
 			'supports'            => array( 'title', 'editor', ),
 		);
 
-		register_post_type( 'event', $args );
+		register_post_type( 'events', $args );
 	}
 
 	/**
@@ -136,7 +136,7 @@ class WPTZ_Init {
 	function p2p_connection_types() {
 		p2p_register_connection_type( array(
 			'name'		  => 'events_to_event_days',
-			'from'		  => 'event',
+			'from'		  => 'events',
 			'to' 		  => 'event_day',
 			'cardinality' => 'one-to-many',
 		) );
